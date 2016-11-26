@@ -47,7 +47,7 @@ mqttc.connect(host=broker, port=1883, keepalive=60)
 # Publishing to IBM Internet of Things Foundation
 mqttc.loop_start()
 
-while mqttc.loop() == 0:
+while True:
     st = None
     i = 1
     status = get_status(i)
